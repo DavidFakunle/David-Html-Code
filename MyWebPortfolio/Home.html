@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Fakunle</title>
+    <link rel="stylesheet" href="Home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headercontent">
+        <h1>David Fakunle.</h1>
+        <nav>
+          <a href="Home.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Projects.html">Projects</a>
+        </nav>
+        <a href="contact.html"><img src="PortfolioImages/message-circle-lines-alt-svgrepo-com.svg" alt="Icon" /></a>
+      </div>
+    </header>
+    <main>
+      <section id="Hero">
+        <div class="herocontent">
+          <div class="Heroinfo">
+            <h1>Hey, I'm David<h1>
+              <h2><span style="color: purple">Data </span> <br />Scientist</h2>
+              <p>
+                I am an aspiring Developer and Data Scientist based in Richmond Texas.
+                <br />
+                Welcome to my portfolio, and kindly enjoy what it offers.
+              </p>
+              <div class="buttons">
+                <a class="button1" href="">Get in Touch</a>
+                <a class="button2" href="Projects.html">Browse Projects</a>
+              </div>
+          </div>
+          <div class="images"> 
+            <img src="PortfolioImages/pictureofME.jpg" alt="PictureofDavid" />
+          </div>
+        </div>
+      </section>
+      <section id="Projects">
+        <h1>Projects<span style="color: black">.</span></h1>
+        <div class="projects">
+          <div class="project">
+              <img src="PortfolioImages/Google Translate.png" alt="Google Translate" />
+            <h2>Google Translate</h2>
+            <p>
+              The translator project is a Python application that translates text between languages, 
+              <br>featuring text-to-speech and language detection. It uses libraries like the Google Translate API or similar services.
+            </p>
+          </div>
+          <div class="project">
+            <img src="PortfolioImages/Asl.jpg" alt="Asl image">
+            <h2>ASl Identifier</h2>
+            <p>David's project is focused on creating a sign language detector in Python <br>
+              that uses TensorFlow and OpenCV to train a convolutional neural network for identifying sign language letters from images.</p>
+          </div>
+        </div>
+      </section>
+      <section id="Experience">
+        <h1>Experience<span style="color: black">.</span></h1>
+        <div class="experiences">
+          <div class="leftEXP">
+            <p onclick="showMicrosfotInfo()">Microsoft</p>
+            <p onclick="showComingSoon()">Future</p>
+          </div>
+          <div id="InfoEXP">
+
+          </div>
+        </div>
+      </section>
+      <section id="Skills">
+        <h1>Skills<span style="color: black;">.</span></h1>
+        <div class="ListOfSkills">
+          <div class="webdesign">
+            <h2>Web Design</h2>
+            <ul>
+              <li>Responsive Design</li>
+              <li>Handling forms and user inputs</li>
+              <li>Designing Web Elements</li>
+              <li>SEO (Secure Engine Optimiazation}</li>
+              <li>DOM Manipulation</li>
+            </ul>
+          </div>
+          <div class="Frontend">
+            <h2>Frontend</h2>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="backend">
+            <h2>Backend</h2>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="softskills">
+            <h2>Soft Skills</h2>
+            <ul>
+              <li>Communication</li>
+              <li>Problem-Solving</li>
+              <li>Adaptability</li>
+              <li>Creativity</li>
+              <li>Resilience</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="Story">
+        <h1>My Story<span style="color: black;"">.</span></h1>
+        <p>
+          I was born in Nigeria, a place where I developed a deep love for all forms of <span style="color: purple; font-weight: bold">artistic</span> expression, from drawing and storytelling to creating music that spoke to my soul. <br> 
+          In 2014, when I moved to America, I was introduced to <span style="color: purple; font-weight: bold">coding</span> for the first time, and I initially hated it, finding it cold, rigid, and disconnected from the creativity that defined me. <br>
+          Despite my early frustrations, as I delved deeper into coding, I began to see it as another way to express <span style="color: purple; font-weight: bold">art</span>, realizing that through logic, algorithms, and problem-solving. <br>
+          This revelation transformed my perspective, and coding, once my least favorite activity, became a medium where creativity and technology <span style="color: purple; font-weight: bold">intersected</span> in fascinating ways. <br> 
+          Now, as I prepare to head to college, I'm excited to pursue a degree in <span style="color: purple; font-weight: bold">computer science</span>, eager to explore this newfound form of art and make it a central part of my future. <br>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="left">
+        <a href="Home.html">Home</a>
+        <a href="Projects.html">Project</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+        <h3>Interested in working together?</h3>
+        <div class="button">
+          <a href="contact.html">Get in Touch</a>
+          <a href="Projects.html">Browse Project</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="images">
+          <a href="https://www.instagram.com/fakunledavid_/"><img src="PortfolioImages/instagram-svgrepo-com.svg" alt="insta" /></a>
+          <a href="https://www.linkedin.com/in/david-fakunle-601648184/"><img src="PortfolioImages/linkedin-svgrepo-com.svg" alt="linkedIn" /></a>
+          <img src="PortfolioImages/github.svg" alt="Github" />
+        </div>
+        <p>&copy 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+    <script>
+      const MicrosoftInfo = `
+            <div class='microsoft-info'>
+                <b>Mentee </b><span style='color: purple; font-size: 1.5rem;'>@ Microsoft</span>
+                <p>June 2024 - August</p>
+                <div class=duties>
+                  <p>&check; Improved coding, data analysis, communcation, and problem-solving skills in a professional tech environment.</p>
+                  <p>&check; Gained mentorship and guidance from Microsoft professionals, learning industry best practicies and technical skills.</p>
+                  <p>&check; Succesfully oversaw a team of peers in completing a high-impact Keystone project, demonstrating leadership, collaboration and project management skills.</p>
+                </div>
+            </div>
+        `;
+      function showMicrosfotInfo(){
+        document.getElementById("InfoEXP").innerHTML= MicrosoftInfo
+      }
+      
+      const ComingSoon= `
+            <div class='microsoft-info'>
+                <b>Soon</b>
+                <p>future date...</p>
+                <div class=duties>
+                  <p>&check; coming soon...</p>
+                  <p>&check; coming soon...</p>
+                  <p>&check; coming soon...</p>
+                </div>
+            </div>
+        `;;
+        
+          
+      function showComingSoon(){
+        document.getElementById("InfoEXP").innerHTML = ComingSoon
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.nav {
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 999;
+    padding: 50px 100px;
+    position: fixed;
+    top: 0;
+}
+
+.nav h1{
+    margin-right: 20px;
+}
+
+.nav a{
+    margin: 0px 20px;
+    color:#131313;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center; 
+    padding: 20px;
+}
+
+.hero p{
+    font-size: 75px;
+    margin: 150px;
+}
+
+.hobbies {
+    background-color: black;
+    color: black;
+    padding: 150px;
+}
+
+.hobbies h1{
+    font-size: 40px;
+    color: #FFFF00;
+}
+
+
+.hobbies h2{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hobbies p{
+    color: #fff;
+    font-size: 100px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.favorites {
+    padding: 150px;
+}
+
+.favorites h1{
+    font-size: 40px;
+}
+
+.favorites h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.favorites li {
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.pictures{
+    background-color: black;
+    color: black;
+    padding: 150px;
+}
+
+
+.pictures h1{
+    font-size: 40px;
+    color: #FFFF00;
+}
+
+.pictures img{
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: bottom left;
+}
+
+.images {
+    display: flex;
+}
+
+.images p{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.white_margin{
+    color: #fff;
+    margin-top: 150px;
+}
+
+.white_margin h1{
+    color: #fff;
+}

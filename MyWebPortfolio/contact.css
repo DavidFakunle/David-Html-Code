@@ -1,0 +1,66 @@
+.hero{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    gap: 300px;
+    margin-top: 200px;
+
+}
+
+.hero .text{
+    margin-top: 100px;
+}
+.hero .text h1{
+    font-size: 3rem;
+}
+
+.hero .text p{
+    font-size: 2rem;
+
+}
+
+
+.hero .images img{
+    border-radius: 60%;
+    outline: 3px solid purple;
+    outline-offset: 10px;
+    transition: outline-offset 4s;
+}
+
+
+.hero .images img:hover{
+    outline-offset: 20px;
+}
+
+.hero .text .email{
+    margin-top: 20px;
+    display: flex;
+}
+
+.hero .text .email a{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+.hero .text .email img{
+    width:55px;
+}
+
+.hero .text .number img{
+    margin-top:10px;
+    width:55px;
+}
+
+.hero .text .number{
+    display: flex;
+}
+
+.hero .text .number a{
+    font-size: 2rem;;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,83 @@
+/* About Hero Section  */
+main section#AboutHero{
+    width: 80%;
+    margin: 80px auto;
+}
+
+main section#AboutHero .info{
+    padding-bottom: 40px;
+}
+
+main section#AboutHero .info h1{
+    font-size: 4rem;
+    color: purple;
+}
+main section#AboutHero .info p{
+    font-size: 1.5rem;
+    border-left: 5px solid purple ; 
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+
+main section#AboutHero .myStack{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+main section#AboutHero img{
+    height: 300px;
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+main section#AboutHero .myStack #stack{
+    width: 40%;
+}
+
+main section#AboutHero .myStack #TX{
+    width: 60%;
+}
+
+main section#AboutHero .myStack p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Experience section*/
+main section#Exp{
+    width: 80%;
+    margin: 80px auto;
+}
+
+main section#Exp h2{
+    font-size: 3rem;
+}
+
+main section  .microsoft{
+    display: flex;
+}
+
+main section .microsoft h1{
+    margin-right: 40px;
+    font-size: 100px;
+    margin-top: 40px;
+}
+
+main section .microsoft h3{
+    font-size: 2rem;
+}
+
+
+main section .microsoft .description .title p{
+    margin-top: 50px;
+    color: purple;
+    margin-bottom: 5px;
+}
+
+main section .microsoft .description p{
+    margin-top: 20px;
+}
