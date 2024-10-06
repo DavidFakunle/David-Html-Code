@@ -309,3 +309,43 @@ footer .right .images img{
     width:30px;
     
 }
+
+/* Responsive layout for Index page */
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    header .headercontent {
+        flex-direction: column;
+    }
+
+    main section#Hero {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    main section#Hero .herocontent {
+        flex-direction: column;
+    }
+
+    main section#Hero h2 {
+        font-size: 2.5rem;
+    }
+
+    main section#Projects .projects {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main section#Experience .experiences {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

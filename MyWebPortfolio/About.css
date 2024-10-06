@@ -81,3 +81,42 @@ main section .microsoft .description .title p{
 main section .microsoft .description p{
     margin-top: 20px;
 }
+
+/* Responsive layout for About page */
+@media (max-width: 768px) {
+    main section#AboutHero {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    main section#AboutHero .info h1 {
+        font-size: 2.5rem;
+    }
+
+    main section#AboutHero .info p {
+        font-size: 1.2rem;
+    }
+
+    main section#AboutHero .myStack {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main section#AboutHero .myStack #stack, main section#AboutHero .myStack #TX {
+        width: 100%;
+    }
+
+    main section#Exp {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    main section .microsoft {
+        flex-direction: column;
+    }
+
+    main section .microsoft h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+}
