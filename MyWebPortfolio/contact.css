@@ -64,25 +64,3 @@
     text-decoration: none;
     color: black;
 }
-
-/* Responsive layout for Contact page */
-@media (max-width: 768px) {
-    .hero {
-        width: 90%;
-        margin: 50px auto;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .hero .text h1 {
-        font-size: 2rem;
-    }
-
-    .hero .text p {
-        font-size: 1.2rem;
-    }
-
-    .hero .text .email img, .hero .text .number img {
-        width: 40px;
-    }
-}
