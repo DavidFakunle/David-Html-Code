@@ -41,6 +41,18 @@ main section .projectimagesandtext  p{
 }
 
 
+@media (max-width:600px){
+    main section#ProjectsHero  .projectimagesandtext img{
+        width: 400px;
+    }
 
+    main section .projectimagesandtext .googletrans p{
+       margin-bottom: 150px;
+    }
+
+    main section .projectimagesandtext .aslproject p{
+        margin-bottom: 100px;
+    }
+}
 
 

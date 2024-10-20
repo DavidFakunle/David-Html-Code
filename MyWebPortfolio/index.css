@@ -310,3 +310,85 @@ footer .right .images img{
     
 }
 
+/*respnsive section */
+
+@media (max-width:600px){
+    header{
+        width: 90%;
+        margin: auto;
+    }
+    header h1{
+        font-size: 1rem;
+        margin-top:
+    }
+    nav{
+        font-size: 1rem;
+    }
+
+    header img{
+        width: 40px;
+        padding-right: 0px;
+    }
+
+    main section#Hero .herocontent{
+        flex-direction: column-reverse;
+        gap: 50px;
+
+    }
+
+    main section#Hero div.images {
+        margin: 0px auto;
+    }
+
+    main section#Hero .herocontent .Heroinfo{
+        text-align: center;
+    }
+
+    main section#Hero .herocontent .images img{
+        width: 100%;
+    }
+
+    main section#Hero .buttons{
+        margin: 0px auto;
+        margin-top: 15px;
+    }
+
+    main section#Projects div.projects{
+        flex-direction: column;
+    }
+    
+    main section#Projects .projects img{
+        width: 100%;
+    }
+
+    main section .experiences{
+        flex-direction: column;
+    }
+    main section .experiences .microsoft-info{
+       border-color: purple;
+       border-style: dashed;
+    }
+    main section#Skills .ListOfSkills{
+        flex-direction: column;
+        text-align: center;
+        gap: 80px;
+    }
+    
+    footer .left .button a{
+        font-size: 15px;
+    }
+
+    footer .right p{
+        font-size: 15px;
+        margin-left: 50px;
+    }
+
+    footer .left .button{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    
+}

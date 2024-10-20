@@ -64,3 +64,25 @@
     text-decoration: none;
     color: black;
 }
+
+@media (max-width:600px){
+    .hero{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .hero .text h1{
+        margin-bottom: 10px;
+    }
+   
+    .hero .images img{
+        width: 100%;
+    }
+
+   .hero .text .email p{
+        font-size:1.5rem;
+   }
+
+   .hero .text .number p{
+        font-size:1.5rem;
+   }
+}

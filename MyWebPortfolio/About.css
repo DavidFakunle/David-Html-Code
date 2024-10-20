@@ -82,3 +82,13 @@ main section .microsoft .description p{
     margin-top: 20px;
 }
 
+@media (max-width:600px){
+    main section#AboutHero .myStack{
+        flex-direction: column;
+    }
+    main section#AboutHero img{
+        width: 350px;
+        object-fit: fill;
+        margin-right: 200px;
+    }
+}
