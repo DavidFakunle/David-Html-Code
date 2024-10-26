@@ -359,6 +359,7 @@ footer .right .images img{
     
     main section#Projects .projects img{
         width: 100%;
+        border-radius: 10px;
     }
 
     main section .experiences{
@@ -367,6 +368,8 @@ footer .right .images img{
     main section .experiences .microsoft-info{
        border-color: purple;
        border-style: dashed;
+       padding: 10px;
+       border-radius: 10px;
     }
     main section .experiences{
         gap: 35px;
