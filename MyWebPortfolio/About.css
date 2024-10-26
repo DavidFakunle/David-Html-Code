@@ -86,10 +86,12 @@ main section .microsoft .description p{
     main section#AboutHero .myStack{
         flex-direction: column;
     }
+    main section#AboutHero{
+        margin-top: 30px;
+    }
     main section#AboutHero img{
         width: 350px;
         object-fit: fill;
-        margin-right: 200px;
     }
     main section#Story {
         text-align: center;

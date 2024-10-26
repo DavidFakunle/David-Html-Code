@@ -368,6 +368,9 @@ footer .right .images img{
        border-color: purple;
        border-style: dashed;
     }
+    main section .experiences{
+        gap: 35px;
+    }
     main section#Skills .ListOfSkills{
         flex-direction: column;
         text-align: center;
