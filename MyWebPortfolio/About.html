@@ -14,7 +14,7 @@
         <h1>David F</h1>
         <nav>
           <a href="index.html">Home</a>
-          <a href="About.html">About</a>
+          <a href="About.html"><span style="color: purple;">About</span></a>
           <a href="Projects.html">Projects</a>
         </nav>
         <a href="contact.html"><img src="PortfolioImages/message-circle-lines-alt-svgrepo-com.svg" alt="Icon" /></a>
@@ -66,6 +66,7 @@
         </div>
       </section>
     </main>
+    <button id="buttonToTop"><img src="PortfolioImages/arrow-square-up-svgrepo-com.svg" alt=""></button>
     <footer>
       <div class="left">
         <a href="index.html">Home</a>
@@ -87,5 +88,24 @@
         <p>&copy 2024 All Rights Reserved</p>
       </div>
     </footer>
+    <script>
+      // scroll to top var
+      const scrollToTop = document.getElementById("buttonToTop") 
+      //shows the button after you scoll past 600px
+      window.onscroll = function(){
+        console.log(document.documentElement.scrollTop)
+        if(document.documentElement.scrollTop > 600){
+          scrollToTop.style.display = "block"
+        }
+        else {
+          scrollToTop.style.display = "none"
+        }
+      }
+      //funtion that controls scroll to top when clicked
+
+      scrollToTop.onclick = function(){
+        window.scrollTo({top:0, behavior:"smooth"})
+      }
+    </script>
   </body>
 </html>

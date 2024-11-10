@@ -10,6 +10,9 @@ header  {
    margin: 0 auto;
    justify-content: center;
    width: 80%;
+   top: 0;
+   position: sticky;
+   background-color:white;
 }
 header .headercontent{
     display: flex;
@@ -40,12 +43,33 @@ nav a:hover{
     color:purple
 }
 
+nav.mobile-nav{
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    align-items: flex-start;
+    display: none;
+    padding: 40px;
+    z-index: 999px;
+}
+
+img.open-menu{
+    display: none;
+}
+
 
 header img{
    padding-right: 10px; 
    width: 55px
 }
 
+.desktop-only{
+    display: flex;
+}
 
 /*Hero Section */
 main section#Hero{
@@ -248,7 +272,24 @@ main section#Story p{
     line-height: 1.5;
 }
 
+/*scroll to top */
+#buttonToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    border: none;
+    z-index: 100;
+    
+}
 
+#buttonToTop img{
+    width: 55px;
+}
+
+#buttonToTop img:hover{
+    cursor: pointer;
+}
 
 /* footer section  */
 
@@ -396,5 +437,11 @@ footer .right .images img{
         text-align: center;
     }
 
-    
+    img.open-menu{
+        display: block;
+    }
+
+    .desktop-only{
+        display: none;
+    }
 }
