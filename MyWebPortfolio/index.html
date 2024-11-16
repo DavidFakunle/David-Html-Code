@@ -10,7 +10,7 @@
   <body>
     <header id="header">
       <div class="headercontent">
-        <h1>David F.</h1>
+        <a href="index.html"><h1>David F</h1></a>
         <nav class="desktop-only">
           <a href="index.html"><span style="color:purple">Home</span></a>
           <a href="About.html">About</a>
@@ -189,12 +189,12 @@
       }
       // scroll to top var
       const scrollToTop = document.getElementById("buttonToTop") 
-      const menuState = document.querySelector(".mobile-nav").style.display
       //shows the button after you scoll past 600px
       window.onscroll = function(){
+        const menuState = document.querySelector(".mobile-nav").style.display
         console.log(document.documentElement.scrollTop)
         if(document.documentElement.scrollTop > 600) {
-          if (menuState == "none"){
+          if (menuState === "none" || menuState === "" ){
             scrollToTop.style.display = "block"
 
           }
@@ -212,15 +212,15 @@
         window.scrollTo({top:0, behavior:"smooth"})
       }
 
-      // function openMenu(){
-        // document.querySelector(".mobile-nav").style.display="flex"
-        // document.querySelector("#buttonToTop").style.display="none"
-      // }
+      function openMenu(){
+         document.querySelector(".mobile-nav").style.display="flex"
+         document.querySelector("#buttonToTop").style.display="none"
+      }
 
-      // function closeMenu(){
-        // document.querySelector(".mobile-nav").style.display="none"
-        // document.querySelector("#buttonToTop").style.display="none"
-      // }
+      function closeMenu(){
+        document.querySelector(".mobile-nav").style.display="none"
+        document.querySelector("#buttonToTop").style.display="none"
+      }
     </script>
   </body>
 </html>

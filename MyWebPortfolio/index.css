@@ -20,9 +20,10 @@ header .headercontent{
     width: 100%;
 }
 
-header h1{
+header a{
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 nav{
@@ -55,8 +56,12 @@ nav.mobile-nav{
     display: none;
     padding: 40px;
     z-index: 999px;
-}
 
+}
+nav.mobile-nav a{
+    font-size: 2rem;
+    padding: 10px;
+}
 img.open-menu{
     display: none;
 }

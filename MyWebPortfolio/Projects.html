@@ -11,13 +11,23 @@
 <body>
     <header>
         <div class="headercontent">
-          <h1>David F</h1>
-          <nav>
+          <a href="index.html"><h1>David F</h1></a>
+          <nav class ="desktop-only">
             <a href="index.html">Home</a>
             <a href="About.html">About</a>
             <a href="Projects.html"> <span style="color: purple;">Projects</span></a>
           </nav>
-          <a href="contact.html"><img src="PortfolioImages/message-circle-lines-alt-svgrepo-com.svg" alt="Icon" /></a>
+          <nav class="mobile-nav">
+            <img onclick= "closeMenu()" src="PortfolioImages/close-bold-svgrepo-com.svg" alt="">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Projects.html"> <span style="color: purple;">Projects</span></a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="icons">
+            <a class= "desktop-only" href="contact.html"><img src="PortfolioImages/message-circle-lines-alt-svgrepo-com.svg" alt="Icon" /></a>
+            <img onclick="openMenu()" class="open-menu" src="PortfolioImages/hamburger-menu-svgrepo-com.svg" alt="">
+          </div>
         </div>
       </header>
       <main>
@@ -72,12 +82,19 @@
       <button id="buttonToTop"><img src="PortfolioImages/arrow-square-up-svgrepo-com.svg" alt=""></button>
       <script>
         // scroll to top var
-      const scrollToTop = document.getElementById("buttonToTop") 
+        const scrollToTop = document.getElementById("buttonToTop") 
       //shows the button after you scoll past 600px
       window.onscroll = function(){
+        const menuState = document.querySelector(".mobile-nav").style.display
         console.log(document.documentElement.scrollTop)
-        if(document.documentElement.scrollTop > 600){
-          scrollToTop.style.display = "block"
+        if(document.documentElement.scrollTop > 600) {
+          if (menuState === "none" || menuState === "" ){
+            scrollToTop.style.display = "block"
+
+          }
+          else{
+            scrollToTop.style.display = "none"
+          }
         }
         else {
           scrollToTop.style.display = "none"
@@ -88,6 +105,16 @@
       scrollToTop.onclick = function(){
         window.scrollTo({top:0, behavior:"smooth"})
       }
-      </script>
+
+      function openMenu(){
+         document.querySelector(".mobile-nav").style.display="flex"
+         document.querySelector("#buttonToTop").style.display="none"
+      }
+
+      function closeMenu(){
+        document.querySelector(".mobile-nav").style.display="none"
+        document.querySelector("#buttonToTop").style.display="none"
+      }
+    </script>
 </body>
 </html>
