@@ -1,3 +1,15 @@
+@keyframes pulse{
+    0%{
+        outline: purple 2px solid;
+        outline-offset: 0px;
+    }
+    100%{
+        outline: rgba(128, 0, 128, 0) 2px solid;
+        outline-offset: 30px;
+        
+    }
+}
+
 .hero{
     width: 80%;
     margin: 100px auto;
@@ -11,7 +23,7 @@
     margin-top: 100px;
 }
 .hero .text h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .hero .text p{
@@ -22,27 +34,26 @@
 
 .hero .images img{
     border-radius: 60%;
-    outline: 3px solid purple;
-    outline-offset: 10px;
-    transition: outline-offset 4s;
+    animation: pulse 3s infinite;
 }
 
 
-.hero .images img:hover{
-    outline-offset: 20px;
-}
+
 
 .hero .text .email{
     margin-top: 20px;
     display: flex;
 }
 
-.hero .text .email a{
+.hero .text .email p{
     margin-top: 20px;
     margin-left: 20px;
     font-size: 1.5rem;
-    text-decoration: none;
     color: black;
+}
+
+.hero .text .email a{
+    text-decoration: none;
 }
 .hero .text .email img{
     width:40px;
@@ -57,12 +68,15 @@
     display: flex;
 }
 
-.hero .text .number a{
-    font-size: 1.5rem;;
+.hero .text .number p{
+    font-size: 1.5rem;
     margin-top: 20px;
     margin-left: 20px;
-    text-decoration: none;
     color: black;
+}
+
+.hero .text .number a{
+    text-decoration: none;
 }
 
 @media (max-width:600px){

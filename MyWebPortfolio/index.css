@@ -1,3 +1,15 @@
+@keyframes pulse{
+    0%{
+        outline: purple 2px solid;
+        outline-offset: 0px;
+    }
+    100%{
+        outline: rgba(128, 0, 128, 0) 2px solid;
+        outline-offset: 30px;
+        
+    }
+}
+
 *{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,6 +25,8 @@ header  {
    top: 0;
    position: sticky;
    background-color:white;
+   padding: 20px 0px;
+   z-index: 10px;
 }
 header .headercontent{
     display: flex;
@@ -20,20 +34,24 @@ header .headercontent{
     width: 100%;
 }
 
-header a{
+header h1{
     margin-top: 10px;
-    font-size: 1rem;
-    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    
+}
+
+header a{
+    text-decoration: none;;
 }
 
 nav{
     display: flex;
-    font-size: 1.5rem;
-    font-weight: bold;
     align-items: center;
 }
 
-nav a{
+nav a{ 
+    font-size: 1.5rem;
     margin-right: 10px;
     text-decoration: none;
     color: black;
@@ -91,10 +109,11 @@ main section#Hero .herocontent .Heroinfo {
 main section#Hero .herocontent {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 main section#Hero h1{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
@@ -118,9 +137,10 @@ main section#Hero a{ /*button*/
     background-color: purple;
     color: white;
     text-decoration:none;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-    transition: all 0.5s ease
+    transition: all 0.5s ease;
+    font-size: 1.5rem;
 }
 
 main section#Hero a:hover{
@@ -133,13 +153,7 @@ main section#Hero a:hover{
 
 main section#Hero div.images img{
     border-radius: 60%;
-    outline: 3px solid purple;
-    outline-offset: 10px;
-    transition: outline-offset 4s;
-}
-
-main section#Hero div.images img:hover{
-    outline-offset: 20px;
+    animation: pulse 3s infinite;
 }
 
 /*Project Section */
@@ -167,11 +181,11 @@ main section#Projects .project img{
     transition: all 0.5s ease;
     object-fit: cover;
     box-shadow: 0px 0px 5px purple;
+    z-index: 0px;
 }
 
 
 main section#Projects .project img:hover{
-    transform: scale(1.1);
     box-shadow: 0px 0px 20px purple;
 }
 
