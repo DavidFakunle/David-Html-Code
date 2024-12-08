@@ -160,6 +160,7 @@ main section#Hero div.images img{
 main section#Projects{
     width: 80%;
     margin: 100px auto;
+
 }
 
 main section#Projects h1{
@@ -173,7 +174,12 @@ main section#Projects div.projects{
     display:flex;
     flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+main section#Projects .projects .project{
+    max-width: 400px;
 }
 main section#Projects .project img{
     width: 400px;

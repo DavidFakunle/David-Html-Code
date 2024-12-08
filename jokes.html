@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke's on You</title>
+</head>
+<body>
+    <h1>Joke's on You</h1>
+    <h2>Setup</h2>
+    <p class="Setup"></p>
+    <h2>Punchline</h2>
+    <p class="Punchline"></p>
+    <script>
+        const setup = document.querySelector(".Setup");
+        const punchline = document.querySelector(".Punchline");
+        const apiUrl ="https://official-joke-api.appspot.com/random_joke"
+        async function fetchJokes(){
+            try {
+                const response = await fetch(apiUrl)
+                const data = await response.json()
+                console.log(data)
+                setup.innerHTML = data.setup
+                punchline.innerHTML = data.punchline
+            } catch(error){
+                
+            }
+        }
+
+        fetchJokes()
+    </script>
+</body>
+</html>
