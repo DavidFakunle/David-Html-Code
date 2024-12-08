@@ -188,6 +188,7 @@ main section#Projects .project img{
     object-fit: cover;
     box-shadow: 0px 0px 5px purple;
     z-index: 0px;
+    border-radius: 10px
 }
 
 
